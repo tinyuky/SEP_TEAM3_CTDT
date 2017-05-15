@@ -390,8 +390,9 @@ namespace WindowsFormsApplication5
 
         //MỤC TIÊU ĐÀO TẠO
         //Thuật toán sửa item trong view
-        private void EditItem(string item, int position,ComboBox cbo){
-            
+        private void EditItem(string item, int position, ComboBox cbo)
+        {
+
             // tìm ra list cũ
             int s1 = 0;
             int s2 = mtc.Count + 2;
@@ -419,45 +420,54 @@ namespace WindowsFormsApplication5
                 {
                     if (g == 3)
                     {
-                        work = sum_arr[g+1];
-                        editint = g+1;
+                        work = sum_arr[g + 1];
+                        editint = g + 1;
                     }
                 }
             }
 
             //Trường hợp edit list cũ
-            if ((cbo.SelectedIndex == editint)&&(editint==0))
+            if ((cbo.SelectedIndex == editint) && (editint == 0))
             {
                 work[position - 1] = txtĐàotạo_content.Text;
             }
             else
             {
-                if ((cbo.SelectedIndex == editint) && (editint ==1))
+                if ((cbo.SelectedIndex == editint) && (editint == 1))
                 {
-                    work[position - (3+mtc.Count)] = txtĐàotạo_content.Text;
+                    work[position - (3 + mtc.Count)] = txtĐàotạo_content.Text;
                 }
                 else
                 {
                     if ((cbo.SelectedIndex == editint) && (editint == 2))
                     {
-                        work[position - (4 + mtc.Count+mtct_pc.Count)] = txtĐàotạo_content.Text;
+                        work[position - (4 + mtc.Count + mtct_pc.Count)] = txtĐàotạo_content.Text;
                     }
                     else
                     {
                         if ((cbo.SelectedIndex == editint) && (editint == 3))
                         {
-                            work[position - (5 + mtc.Count + mtct_pc.Count+mtct_kt.Count)] = txtĐàotạo_content.Text;
+                            work[position - (5 + mtc.Count + mtct_pc.Count + mtct_kt.Count)] = txtĐàotạo_content.Text;
                         }
                         else
                         {
                             if ((cbo.SelectedIndex == editint) && (editint == 4))
                             {
-                                work[position - (6 + mtc.Count + mtct_pc.Count + mtct_kt.Count+mtct_kn.Count)] = txtĐàotạo_content.Text;
+                                work[position - (6 + mtc.Count + mtct_pc.Count + mtct_kt.Count + mtct_kn.Count)] = txtĐàotạo_content.Text;
                             }
+                            
                         }
                     }
                 }
-                
+
+            }
+
+            //Trường hợp edit list khác
+            if (cbo.SelectedIndex != editint)
+            {
+                DeleteItem(itemcontent, itemposition);
+                sum_arr[cbo.SelectedIndex].Add(txtĐàotạo_content.Text);
+
             }
 
 
@@ -469,28 +479,37 @@ namespace WindowsFormsApplication5
             DialogResult a = MessageBox.Show("Bạn có muốn sửa đối tượng này không?", "Thông báo", MessageBoxButtons.OKCancel);
             if (a == DialogResult.OK)
             {
-                //Xóa sach item trong view
-                lwĐàotạo_view.Items.Clear();
+                if (txtĐàotạo_content.Text != "")
+                {
+                    //Xóa sach item trong view
+                    lwĐàotạo_view.Items.Clear();
 
-                //Chạy thuật toán edit
-                EditItem(itemcontent, itemposition, cboĐàotạo_level);
+                    //Chạy thuật toán edit
+                    EditItem(itemcontent, itemposition, cboĐàotạo_level);
 
-                //xóa content
-                txtĐàotạo_content.Text = "";
+                    //xóa content
+                    txtĐàotạo_content.Text = "";
 
-                //vẽ lại view
-                ShowMuctieudaotao();
+                    //vẽ lại view
+                    ShowMuctieudaotao();
 
-                //visible 2 nút sửa, hủy
-                btnMụctiêu_sửa.Visible = false;
-                btnMụctiêu_hủy.Visible = false;
-                btnĐàotạo_add.Text = ">>>";
+                    //visible 2 nút sửa, hủy           
+                    btnMụctiêu_sửa.Visible = false;
+                    btnMụctiêu_hủy.Visible = false;
+                    btnĐàotạo_add.Text = ">>>";
 
-                //thông báo
-                MessageBox.Show("Đã sửa đối tượng thành công");
-            
+                    //thông báo
+                    MessageBox.Show("Đã sửa đối tượng thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Hãy điền nội dung");
+                }
+               
             }
-            
+
+
+
         }
 
 

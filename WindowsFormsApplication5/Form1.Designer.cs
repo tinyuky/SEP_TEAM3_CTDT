@@ -393,7 +393,7 @@
             this.tclMain.Location = new System.Drawing.Point(3, 8);
             this.tclMain.Name = "tclMain";
             this.tclMain.SelectedIndex = 0;
-            this.tclMain.Size = new System.Drawing.Size(1357, 500);
+            this.tclMain.Size = new System.Drawing.Size(1357, 613);
             this.tclMain.TabIndex = 16;
             // 
             // tabThôngtinchung
@@ -525,7 +525,7 @@
             this.tabMụctiêu.Location = new System.Drawing.Point(4, 4);
             this.tabMụctiêu.Name = "tabMụctiêu";
             this.tabMụctiêu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMụctiêu.Size = new System.Drawing.Size(1349, 469);
+            this.tabMụctiêu.Size = new System.Drawing.Size(1349, 582);
             this.tabMụctiêu.TabIndex = 0;
             this.tabMụctiêu.Text = "Mục tiêu đào tạo";
             this.tabMụctiêu.UseVisualStyleBackColor = true;
@@ -545,7 +545,7 @@
             this.pnMụctiêu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMụctiêu.Location = new System.Drawing.Point(3, 3);
             this.pnMụctiêu.Name = "pnMụctiêu";
-            this.pnMụctiêu.Size = new System.Drawing.Size(1343, 463);
+            this.pnMụctiêu.Size = new System.Drawing.Size(1343, 576);
             this.pnMụctiêu.TabIndex = 0;
             // 
             // btnMụctiêu_sửa
