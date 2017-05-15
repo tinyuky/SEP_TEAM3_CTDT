@@ -18,6 +18,10 @@ namespace WindowsFormsApplication5
         private List<string> mtct_kt = new List<string>();
         private List<string> mtct_kn = new List<string>();
         private List<string> mtct_td = new List<string>();
+
+        string itemcontent = "";
+        int itemposition = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +33,7 @@ namespace WindowsFormsApplication5
 
             wbCơsởvậtchất.Navigate("\\ckeditor.html");
             string c = Path.GetDirectoryName(Application.StartupPath);
-            wbKhốilượngkt.Navigate(Path.GetDirectoryName(Application.StartupPath).Replace(@"\bin","") + @"\ckeditor.html");
+            wbKhốilượngkt.Navigate(Path.GetDirectoryName(Application.StartupPath).Replace(@"\bin", "") + @"\ckeditor.html");
             wbĐốitượng.Navigate(Path.GetDirectoryName(Application.StartupPath).Replace(@"\bin", "") + @"\ckeditor.html");
             wbQuytrình.Navigate(Path.GetDirectoryName(Application.StartupPath).Replace(@"\bin", "") + @"\ckeditor.html");
 
@@ -37,7 +41,7 @@ namespace WindowsFormsApplication5
             btnMụctiêu_hủy.Visible = false;
             btnMụctiêu_sửa.Visible = false;
 
-            
+
         }
 
         //SET UP MỤC LỤC
@@ -191,15 +195,12 @@ namespace WindowsFormsApplication5
             if (btnĐàotạo_add.Text == "Xóa")
             {
                 //confirm xóa
-                DialogResult a = MessageBox.Show("Bạn có muốn xóa đối tượng này không?","Thông báo",MessageBoxButtons.OKCancel);
+                DialogResult a = MessageBox.Show("Bạn có muốn xóa đối tượng này không?", "Thông báo", MessageBoxButtons.OKCancel);
                 if (a == DialogResult.OK)
                 {
-                    //lay item
-                    string item = lwĐàotạo_view.SelectedItem.ToString().Replace("\n     - ", "").Replace("\n         - ", "");
-                    int local = lwĐàotạo_view.SelectedIndex;
 
                     //thuc hien xoa
-                    DeleteItem(item, local);
+                    DeleteItem(itemcontent, itemposition);
 
                     //vẽ lại view
                     lwĐàotạo_view.Items.Clear();
@@ -216,10 +217,10 @@ namespace WindowsFormsApplication5
                     //thông báo
                     MessageBox.Show("Đã xóa đối tượng thành công");
                 }
-                
+
 
             }
-            
+
 
 
         }
@@ -270,9 +271,59 @@ namespace WindowsFormsApplication5
                     btnMụctiêu_hủy.Visible = true;
                     btnĐàotạo_add.Text = "Xóa";
 
-                    txtĐàotạo_content.Text = lwĐàotạo_view.SelectedItem.ToString().Replace("\n     - ", "").Replace("\n         - ","");
+                    txtĐàotạo_content.Text = lwĐàotạo_view.SelectedItem.ToString().Replace("\n     - ", "").Replace("\n         - ", "");
+
+                    itemcontent = lwĐàotạo_view.SelectedItem.ToString().Replace("\n     - ", "").Replace("\n         - ", "");
+                    itemposition = lwĐàotạo_view.SelectedIndex;
+
+                    int s1 = 0;
+                    int s2 = mtc.Count + 2;
+                    int s3 = s2 + mtct_pc.Count + 1;
+                    int s4 = s3 + mtct_kt.Count + 1;
+                    int s5 = s4 + mtct_kn.Count + 1;
+
+                    int[] arr = new[] { s1, s2, s3, s4, s5 };
+
+                    int selectindex = 0;
+
+                    for (int i = 0; i < 4; i++)
+                    {
+                        if ((itemposition > arr[i]) && (itemposition < arr[i + 1]))
+                        {
+                            if (i == 0)
+                            {
+                                selectindex = 0;
+                                break;
+                            }
+                            if (i == 1)
+                            {
+                                selectindex = 1;
+                                break;
+                            }
+                            if (i == 2)
+                            {
+                                selectindex = 2;
+                                break;
+                            }
+                            if (i == 3)
+                            {
+                                selectindex = 3;
+                                break;
+                            }
+
+                        }
+                        else
+                        {
+                            if (i == 3)
+                            {
+                                selectindex = 4;
+                            }
+                        }
+                    }
+
+                    cboĐàotạo_level.SelectedIndex = selectindex;
                 }
-                
+
             }
         }
 
@@ -289,18 +340,19 @@ namespace WindowsFormsApplication5
 
         //MỤC TIÊU ĐÀO TẠO
         //Thuật toán xóa
-        private void DeleteItem(string item,int local){
+        private void DeleteItem(string item, int local)
+        {
             int s1 = 0;
-            int s2 = mtc.Count+ 2;
-            int s3 = s2+mtct_pc.Count+1;
-            int s4 = s3+mtct_kt.Count+1;
-            int s5 = s4+mtct_kn.Count+1;
+            int s2 = mtc.Count + 2;
+            int s3 = s2 + mtct_pc.Count + 1;
+            int s4 = s3 + mtct_kt.Count + 1;
+            int s5 = s4 + mtct_kn.Count + 1;
 
             int[] arr = new[] { s1, s2, s3, s4, s5 };
 
             for (int i = 0; i < 4; i++)
             {
-                if ((local > arr[i])&&(local<arr[i+1]))
+                if ((local > arr[i]) && (local < arr[i + 1]))
                 {
                     if (i == 0)
                     {
@@ -322,7 +374,7 @@ namespace WindowsFormsApplication5
                         mtct_kn.Remove(item);
                         break;
                     }
-                    
+
                 }
                 else
                 {
@@ -335,7 +387,112 @@ namespace WindowsFormsApplication5
 
         }
 
-      
+
+        //MỤC TIÊU ĐÀO TẠO
+        //Thuật toán sửa item trong view
+        private void EditItem(string item, int position,ComboBox cbo){
+            
+            // tìm ra list cũ
+            int s1 = 0;
+            int s2 = mtc.Count + 2;
+            int s3 = s2 + mtct_pc.Count + 1;
+            int s4 = s3 + mtct_kt.Count + 1;
+            int s5 = s4 + mtct_kn.Count + 1;
+
+            int[] arr = new[] { s1, s2, s3, s4, s5 };
+
+            List<List<string>> sum_arr = new List<List<string>> { mtc, mtct_pc, mtct_kt, mtct_kn, mtct_td };
+
+            List<string> work = new List<string>();
+
+            int editint = 0;
+
+            for (int g = 0; g < 4; g++)
+            {
+                if ((position > arr[g]) && (position < arr[g + 1]))
+                {
+                    work = sum_arr[g];
+                    editint = g;
+                    break;
+                }
+                else
+                {
+                    if (g == 3)
+                    {
+                        work = sum_arr[g+1];
+                        editint = g+1;
+                    }
+                }
+            }
+
+            //Trường hợp edit list cũ
+            if ((cbo.SelectedIndex == editint)&&(editint==0))
+            {
+                work[position - 1] = txtĐàotạo_content.Text;
+            }
+            else
+            {
+                if ((cbo.SelectedIndex == editint) && (editint ==1))
+                {
+                    work[position - (3+mtc.Count)] = txtĐàotạo_content.Text;
+                }
+                else
+                {
+                    if ((cbo.SelectedIndex == editint) && (editint == 2))
+                    {
+                        work[position - (4 + mtc.Count+mtct_pc.Count)] = txtĐàotạo_content.Text;
+                    }
+                    else
+                    {
+                        if ((cbo.SelectedIndex == editint) && (editint == 3))
+                        {
+                            work[position - (5 + mtc.Count + mtct_pc.Count+mtct_kt.Count)] = txtĐàotạo_content.Text;
+                        }
+                        else
+                        {
+                            if ((cbo.SelectedIndex == editint) && (editint == 4))
+                            {
+                                work[position - (6 + mtc.Count + mtct_pc.Count + mtct_kt.Count+mtct_kn.Count)] = txtĐàotạo_content.Text;
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+
+
+        }
+
+        private void btnMụctiêu_sửa_Click(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Bạn có muốn sửa đối tượng này không?", "Thông báo", MessageBoxButtons.OKCancel);
+            if (a == DialogResult.OK)
+            {
+                //Xóa sach item trong view
+                lwĐàotạo_view.Items.Clear();
+
+                //Chạy thuật toán edit
+                EditItem(itemcontent, itemposition, cboĐàotạo_level);
+
+                //xóa content
+                txtĐàotạo_content.Text = "";
+
+                //vẽ lại view
+                ShowMuctieudaotao();
+
+                //visible 2 nút sửa, hủy
+                btnMụctiêu_sửa.Visible = false;
+                btnMụctiêu_hủy.Visible = false;
+                btnĐàotạo_add.Text = ">>>";
+
+                //thông báo
+                MessageBox.Show("Đã sửa đối tượng thành công");
+            
+            }
+            
+        }
+
 
     }
 }
