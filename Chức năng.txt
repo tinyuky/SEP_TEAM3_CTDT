@@ -1,0 +1,4 @@
+- GUI 1.0
+- Muc tieu dao tao: 
+	+ Add
+	+ Delete

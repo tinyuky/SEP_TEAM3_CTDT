@@ -1,0 +1,39 @@
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe.config
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.pdb
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csprojResolveAssemblyReference.cache
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form1.resources
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Properties.Resources.resources
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csproj.GenerateResource.Cache
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.exe
+D:\Old Data\Dữ liệu cũ\CMU\SEP\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.pdb
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe.config
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.exe
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.pdb
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.pdb
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form1.resources
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Properties.Resources.resources
+C:\Users\DELL\Downloads\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csproj.GenerateResource.Cache
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe.config
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.pdb
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form1.resources
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Properties.Resources.resources
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csproj.GenerateResource.Cache
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.exe
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.pdb
+D:\Old Data\Dữ liệu cũ\CMU\SEP\CODE PROTOTYPE BẰNG THƯ MỤC NÀY\Prototype_CTDT_280417\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Downloads\Prototype_CTDT_14052017\Prototype_CTDT_14h50_14052017\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe.config
+C:\Users\DELL\Downloads\Prototype_CTDT_14052017\Prototype_CTDT_14h50_14052017\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.exe
+C:\Users\DELL\Downloads\Prototype_CTDT_14052017\Prototype_CTDT_14h50_14052017\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.pdb
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe.config
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.exe
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.pdb
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.pdb
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csprojResolveAssemblyReference.cache
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Form1.resources
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.Properties.Resources.resources
+D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csproj.GenerateResource.Cache
