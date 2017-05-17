@@ -1,4 +1,3 @@
-- GUI 1.0
-- Muc tieu dao tao: 
-	+ Add
-	+ Delete
+Set size ckeditor
+Fix paste from word ckeditor
+Code Muc luc
