@@ -21,5 +21,5 @@ CKEDITOR.editorConfig = function (config) {
 		{ name: 'about', groups: ['about'] }
     ];
 
-    config.removeButtons = 'Underline,Subscript,Superscript,Link,Unlink,Anchor,Image,Maximize,Source,About,Format,PasteText,PasteFromWord,Paste';
+    config.removeButtons = 'Unlink,Link,Anchor,Image,Maximize,Source,Styles,About';
 };

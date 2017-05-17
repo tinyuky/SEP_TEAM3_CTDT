@@ -31,7 +31,7 @@ namespace WindowsFormsApplication5
             //wbĐốitượng.Navigate(Path.GetDirectoryName(Application.ExecutablePath).Replace(@"bin\Debug", "") + "ckeditor.html");
             //wbQuytrình.Navigate(Path.GetDirectoryName(Application.ExecutablePath).Replace(@"bin\Debug", "") + "ckeditor.html");
 
-            wbCơsởvậtchất.Navigate("\\ckeditor.html");
+            wbCơsởvậtchất.Navigate(Path.GetDirectoryName(Application.StartupPath).Replace(@"\bin", "") + @"\ckeditor.html");
             string c = Path.GetDirectoryName(Application.StartupPath);
             wbKhốilượngkt.Navigate(Path.GetDirectoryName(Application.StartupPath).Replace(@"\bin", "") + @"\ckeditor.html");
             wbĐốitượng.Navigate(Path.GetDirectoryName(Application.StartupPath).Replace(@"\bin", "") + @"\ckeditor.html");
@@ -511,6 +511,8 @@ namespace WindowsFormsApplication5
 
 
         }
+
+        //
 
 
     }

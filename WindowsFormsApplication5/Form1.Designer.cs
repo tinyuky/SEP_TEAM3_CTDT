@@ -84,7 +84,6 @@
             this.label46 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.pnQuytrình = new System.Windows.Forms.Panel();
-            this.wbQuytrình = new System.Windows.Forms.WebBrowser();
             this.pnĐốitượng = new System.Windows.Forms.Panel();
             this.wbĐốitượng = new System.Windows.Forms.WebBrowser();
             this.label42 = new System.Windows.Forms.Label();
@@ -155,6 +154,7 @@
             this.wbCơsởvậtchất = new System.Windows.Forms.WebBrowser();
             this.label35 = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
+            this.wbQuytrình = new System.Windows.Forms.WebBrowser();
             this.menuStrip1.SuspendLayout();
             this.pnForm.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -225,7 +225,7 @@
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(630, 627);
+            this.btnPrevious.Location = new System.Drawing.Point(619, 627);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(50, 30);
             this.btnPrevious.TabIndex = 0;
@@ -244,7 +244,7 @@
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(473, 5);
+            this.panel3.Location = new System.Drawing.Point(462, 5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 21);
             this.panel3.TabIndex = 18;
@@ -297,85 +297,98 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem1.Text = "Thông tin chung";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.thôngTinChungToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem2.Text = "Mục tiêu đào tạo";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.mụcTiêuĐàoTạoToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem3.Text = "Thời gian đào tạo";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.thờiGianĐàoTạoToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem4.Text = "Khối lượng kiến thức toàn khóa";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.khốiLượngKiếnThứcToànKhóaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem5.Text = "Đối tượng tuyển sinh";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.đốiTượngTuyểnSinhToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem6.Text = "Quy trình đào tạo, điều kiện tốt nghiệp";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.quyTrìnhĐàoTạoĐiềuKiệnTốtNghiệpToolStripMenuItem_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
             this.toolStripMenuItem7.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem7.Text = "Thang điểm";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.thangĐiểmToolStripMenuItem_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
             this.toolStripMenuItem8.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem8.Text = "Quản lí môn học";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.quảnLíMônHọcToolStripMenuItem_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
             this.toolStripMenuItem9.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem9.Text = "Nội dung chương trình (tên và khối lượng các học phần):";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.nộiDungChươngTrìnhtênVàKhốiLượngCácHọcPhầnToolStripMenuItem_Click);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
             this.toolStripMenuItem10.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem10.Text = "Kế hoạch giảng dạy (dự kiến)";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.kếHoạchGiảngDạydựKiếnToolStripMenuItem_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
             this.toolStripMenuItem11.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem11.Text = "Mô tả vắn tắt nội dung và khối lượng các học phần";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.hướngDẫnThựcHiệnChươngTrìnhToolStripMenuItem_Click);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
             this.toolStripMenuItem12.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem12.Text = "Danh sách đội ngũ giảng viên thực hiện chương trình";
+            this.toolStripMenuItem12.Click += new System.EventHandler(this.danhSáchĐộiNgũGiảngViênThựcHiệnChươngTrìnhToolStripMenuItem_Click);
             // 
             // toolStripMenuItem13
             // 
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
             this.toolStripMenuItem13.Size = new System.Drawing.Size(442, 22);
             this.toolStripMenuItem13.Text = "Cơ sở vật chất phục vụ học tập";
+            this.toolStripMenuItem13.Click += new System.EventHandler(this.cơSởVậtChấtPhụcVụHọcTậpToolStripMenuItem_Click);
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(232, 18);
-            this.toolStripStatusLabel2.Text = "                                           Mục lục";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(220, 18);
+            this.toolStripStatusLabel2.Text = "                                        Mục lục";
             this.toolStripStatusLabel2.MouseHover += new System.EventHandler(this.toolStripStatusLabel2_MouseHover);
             // 
             // tclMain
@@ -680,9 +693,9 @@
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(47, 1077);
+            this.panel6.Location = new System.Drawing.Point(47, 1415);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(32, 129);
+            this.panel6.Size = new System.Drawing.Size(32, 379);
             this.panel6.TabIndex = 53;
             // 
             // label43
@@ -713,7 +726,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(44, 835);
+            this.label46.Location = new System.Drawing.Point(44, 1231);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(335, 18);
             this.label46.TabIndex = 49;
@@ -722,7 +735,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(44, 506);
+            this.label45.Location = new System.Drawing.Point(44, 697);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(186, 18);
             this.label45.TabIndex = 48;
@@ -731,26 +744,17 @@
             // pnQuytrình
             // 
             this.pnQuytrình.Controls.Add(this.wbQuytrình);
-            this.pnQuytrình.Location = new System.Drawing.Point(440, 835);
+            this.pnQuytrình.Location = new System.Drawing.Point(98, 1274);
             this.pnQuytrình.Name = "pnQuytrình";
-            this.pnQuytrình.Size = new System.Drawing.Size(822, 300);
+            this.pnQuytrình.Size = new System.Drawing.Size(1161, 481);
             this.pnQuytrình.TabIndex = 44;
-            // 
-            // wbQuytrình
-            // 
-            this.wbQuytrình.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wbQuytrình.Location = new System.Drawing.Point(0, 0);
-            this.wbQuytrình.MinimumSize = new System.Drawing.Size(20, 20);
-            this.wbQuytrình.Name = "wbQuytrình";
-            this.wbQuytrình.Size = new System.Drawing.Size(822, 300);
-            this.wbQuytrình.TabIndex = 0;
             // 
             // pnĐốitượng
             // 
             this.pnĐốitượng.Controls.Add(this.wbĐốitượng);
-            this.pnĐốitượng.Location = new System.Drawing.Point(440, 506);
+            this.pnĐốitượng.Location = new System.Drawing.Point(98, 733);
             this.pnĐốitượng.Name = "pnĐốitượng";
-            this.pnĐốitượng.Size = new System.Drawing.Size(822, 300);
+            this.pnĐốitượng.Size = new System.Drawing.Size(1161, 481);
             this.pnĐốitượng.TabIndex = 43;
             // 
             // wbĐốitượng
@@ -759,7 +763,8 @@
             this.wbĐốitượng.Location = new System.Drawing.Point(0, 0);
             this.wbĐốitượng.MinimumSize = new System.Drawing.Size(20, 20);
             this.wbĐốitượng.Name = "wbĐốitượng";
-            this.wbĐốitượng.Size = new System.Drawing.Size(822, 300);
+            this.wbĐốitượng.ScrollBarsEnabled = false;
+            this.wbĐốitượng.Size = new System.Drawing.Size(1161, 481);
             this.wbĐốitượng.TabIndex = 0;
             // 
             // label42
@@ -774,19 +779,20 @@
             // pnKhốilượngkt
             // 
             this.pnKhốilượngkt.Controls.Add(this.wbKhốilượngkt);
-            this.pnKhốilượngkt.Location = new System.Drawing.Point(437, 165);
+            this.pnKhốilượngkt.Location = new System.Drawing.Point(98, 193);
             this.pnKhốilượngkt.Name = "pnKhốilượngkt";
-            this.pnKhốilượngkt.Size = new System.Drawing.Size(822, 300);
+            this.pnKhốilượngkt.Size = new System.Drawing.Size(1161, 481);
             this.pnKhốilượngkt.TabIndex = 41;
             // 
             // wbKhốilượngkt
             // 
+            this.wbKhốilượngkt.CausesValidation = false;
             this.wbKhốilượngkt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wbKhốilượngkt.Location = new System.Drawing.Point(0, 0);
             this.wbKhốilượngkt.MinimumSize = new System.Drawing.Size(20, 20);
             this.wbKhốilượngkt.Name = "wbKhốilượngkt";
             this.wbKhốilượngkt.ScrollBarsEnabled = false;
-            this.wbKhốilượngkt.Size = new System.Drawing.Size(822, 300);
+            this.wbKhốilượngkt.Size = new System.Drawing.Size(1161, 481);
             this.wbKhốilượngkt.TabIndex = 0;
             // 
             // label36
@@ -1381,7 +1387,7 @@
             this.pnCơsởvậtchất.Controls.Add(this.wbCơsởvậtchất);
             this.pnCơsởvậtchất.Location = new System.Drawing.Point(145, 95);
             this.pnCơsởvậtchất.Name = "pnCơsởvậtchất";
-            this.pnCơsởvậtchất.Size = new System.Drawing.Size(1106, 350);
+            this.pnCơsởvậtchất.Size = new System.Drawing.Size(1161, 481);
             this.pnCơsởvậtchất.TabIndex = 6;
             // 
             // wbCơsởvậtchất
@@ -1390,7 +1396,8 @@
             this.wbCơsởvậtchất.Location = new System.Drawing.Point(0, 0);
             this.wbCơsởvậtchất.MinimumSize = new System.Drawing.Size(20, 20);
             this.wbCơsởvậtchất.Name = "wbCơsởvậtchất";
-            this.wbCơsởvậtchất.Size = new System.Drawing.Size(1106, 350);
+            this.wbCơsởvậtchất.ScrollBarsEnabled = false;
+            this.wbCơsởvậtchất.Size = new System.Drawing.Size(1161, 481);
             this.wbCơsởvậtchất.TabIndex = 0;
             // 
             // label35
@@ -1405,13 +1412,23 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(738, 627);
+            this.btnNext.Location = new System.Drawing.Point(731, 627);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(50, 30);
             this.btnNext.TabIndex = 1;
             this.btnNext.Text = ">";
             this.btnNext.UseVisualStyleBackColor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // wbQuytrình
+            // 
+            this.wbQuytrình.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wbQuytrình.Location = new System.Drawing.Point(0, 0);
+            this.wbQuytrình.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbQuytrình.Name = "wbQuytrình";
+            this.wbQuytrình.ScrollBarsEnabled = false;
+            this.wbQuytrình.Size = new System.Drawing.Size(1161, 481);
+            this.wbQuytrình.TabIndex = 0;
             // 
             // Form1
             // 
@@ -1514,7 +1531,6 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel pnQuytrình;
-        private System.Windows.Forms.WebBrowser wbQuytrình;
         private System.Windows.Forms.Panel pnĐốitượng;
         private System.Windows.Forms.WebBrowser wbĐốitượng;
         private System.Windows.Forms.Label label42;
@@ -1609,6 +1625,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.WebBrowser wbQuytrình;
 
 
 
