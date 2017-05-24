@@ -40,3 +40,6 @@ D:\Data\Dữ liệu cũ\CMU\SEP\WORK\WindowsFormsApplication5\obj\Debug\WindowsF
 C:\Users\DELL\Documents\GitHub\SEP_TEAM3_CTDT\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe.config
 C:\Users\DELL\Documents\GitHub\SEP_TEAM3_CTDT\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.exe
 C:\Users\DELL\Documents\GitHub\SEP_TEAM3_CTDT\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.pdb
+C:\Users\DELL\Source\Repos\SEP_CTDT_TEAM3\SEP_TEAM3_CTDT\WindowsFormsApplication5\bin\Debug\WindowsFormsApplication5.exe.config
+C:\Users\DELL\Source\Repos\SEP_CTDT_TEAM3\SEP_TEAM3_CTDT\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.exe
+C:\Users\DELL\Source\Repos\SEP_CTDT_TEAM3\SEP_TEAM3_CTDT\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.pdb
